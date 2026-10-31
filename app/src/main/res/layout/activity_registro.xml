@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+            <TextView
+                android:id="@+id/btnAtras"
+                style="@style/BotonAtras" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta"
+                android:textColor="@color/morado"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:layout_marginTop="24dp"
+                android:text="Nombre completo" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                style="@style/CampoForm"
+                android:hint="María López"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Correo electrónico" />
+
+            <EditText
+                android:id="@+id/etCorreo"
+                style="@style/CampoForm"
+                android:hint="maria@correo.com"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Teléfono" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                style="@style/CampoForm"
+                android:hint="999 999 999"
+                android:inputType="phone" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Contraseña" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/CampoForm"
+                android:hint="Mínimo 6 caracteres"
+                android:inputType="textPassword" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Confirmar contraseña" />
+
+            <EditText
+                android:id="@+id/etConfirmar"
+                style="@style/CampoForm"
+                android:hint="Repite tu contraseña"
+                android:inputType="textPassword" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                style="@style/BotonPrincipal"
+                android:layout_marginTop="32dp"
+                android:text="Registrarse" />
+
+            <TextView
+                android:id="@+id/tvIniciaSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="¿Ya tienes cuenta? Inicia sesión"
+                android:textColor="@color/morado"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

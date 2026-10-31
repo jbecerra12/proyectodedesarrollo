@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".agregar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+            <TextView
+                android:id="@+id/btnAtras"
+                style="@style/BotonAtras" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar mascota"
+                android:textColor="@color/morado"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:layout_marginTop="24dp"
+                android:text="Nombre de la mascota" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                style="@style/CampoForm"
+                android:hint="Luna"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Especie" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="16dp"
+                    android:text="▼"
+                    android:textColor="@color/morado"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spEspecie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingStart="8dp" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Raza" />
+
+            <EditText
+                android:id="@+id/etRaza"
+                style="@style/CampoForm"
+                android:hint="Golden Retriever"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Fecha de nacimiento" />
+
+            <EditText
+                android:id="@+id/etFecha"
+                style="@style/CampoForm"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint="Toca para elegir la fecha"
+                android:inputType="none" />
+
+            <TextView
+                style="@style/EtiquetaForm"
+                android:text="Características especiales" />
+
+            <EditText
+                android:id="@+id/etCaracteristicas"
+                style="@style/CampoForm"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Alergia a la penicilina, asustadizo"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                style="@style/BotonPrincipal"
+                android:layout_marginTop="32dp"
+                android:text="Guardar mascota" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                style="@style/BotonBorde"
+                android:text="Regresar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

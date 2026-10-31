@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".listar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/btnAtras"
+            style="@style/BotonAtras" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mis mascotas"
+                android:textColor="@color/morado"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                style="@style/BotonPrincipal"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:text="+"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstMascotas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp" />
+
+    </LinearLayout>
+</LinearLayout>

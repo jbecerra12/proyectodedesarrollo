@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".elegir_horario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/btnAtras"
+            style="@style/BotonAtras" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige el horario"
+            android:textColor="@color/morado"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvServicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Servicio:"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mascota:"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/EtiquetaForm"
+            android:layout_marginTop="24dp"
+            android:text="Horarios disponibles (10:00 AM a 6:00 PM)" />
+
+        <RadioGroup
+            android:id="@+id/rgHorarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                style="@style/OpcionHorario"
+                android:text="10:00 AM - 12:00 PM" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                style="@style/OpcionHorario"
+                android:text="12:00 PM - 2:00 PM" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                style="@style/OpcionHorario"
+                android:text="2:00 PM - 4:00 PM" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                style="@style/OpcionHorario"
+                android:text="4:00 PM - 6:00 PM" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            style="@style/BotonPrincipal"
+            android:text="Confirmar" />
+
+    </LinearLayout>
+</LinearLayout>
